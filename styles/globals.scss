@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply min-h-full h-full;
+}
+body {
+  @apply bg-black min-h-full h-full text-white;
+  letter-spacing: -0.2px;
+
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'ss01' on, 'ss03' on;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+#__next {
+  @apply min-h-full h-full;
+}
+
+[data-aos][data-aos-easing="smooth"] {
+  transition-timing-function: cubic-bezier(0.6,0.6,0,1);
+}
+[data-aos=fade-up] {
+  transform: translate3d(0,40px,0);
+}
+.grecaptcha-badge {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -9999;
+}
